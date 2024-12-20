@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techera</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .custom-shadow {
+        box-shadow: 0 1px 50px rgb(88, 115, 97);
+        }
+    </style>
+</head>
+<body class=" bg-white p-0 m-0">
+    <header class="bg-green-200 ">
+        <nav class="flex justify-between items-center p-4">
+             <!-- Left section  -->
+           <a href="#edt"> <i class="fa-solid fa-landmark fa-beat-fade fa-2xl lg:m-2 sm: m-1" style="color: #025201cc;"></i></a>
+            <!-- Left section (3 items centered) -->
+            <div class=" text-green-700 flex font-semibold -mt-2 lg:space-x-12 mr-2 sm: space-x-2 mx-2">
+              <a href="index.html" class="hover:text-green-500">Home</a>
+              <a href="#edt" class="hover:text-green-500">About</a>
+              <a href="#profeciencies" class="hover:text-green-500">Services</a>
+            </div>
+            
+            <!-- Right section (1 item aligned to the right) -->
+            <a href="#footer" class="bg-green-700 text-white font-bold py-2 px-3 rounded hover:bg-green-600">Contact</a>
+          </nav>
+        
+    </header>
+
+    <section class="bg-green-200">
+        <div class="text-green-700 p-5 text font-sans font-bold text-3xl">
+         <h1 class="mb-5">Discovering, <br> Developing and <br> Deploying Tech Dreams</h1>
+        </div>   
+        <div class=" float-right bg-green-500 rounded-full custom-shadow lg:w-40 -mt-32 sm: w-24  mr-2">
+            <img src="image.jpg" alt="Student Learning" class="rounded-full">
+        </div>  
+        <p class="text-gray-700 m-5 -mt-8 font-semibold">Unleash your full potential with Erudite Tech’s comprehensive <br>tech education, designed to equip you with the skills and knowledge <br>needed to excel in today’s fast-paced digital world.</p>
+          
+          <a href="#cta"> <button class="bg-yellow-600 hover:bg-yellow-800 text-white font-bold m-5 py-2 px-4 rounded">Get Started </button></a>
+    </section>
+
+           <!-- Section 1- Proficiencies -->
+    <section id="Proficiencies" class="Proficiencies p-6 bg-white">
+        <h2 class="text-grey-900 font-bold font-sans text-2xl">Unveiling the Proficiencies you'll master.</h2>
+        <img src="OIP.jpeg" alt="studentsl" class="lg:float-right sm: w-37 h-37">
+        <div class="flex flex-col items-start space-y-5 mt-5">
+                  
+                <div class="flex flex-center space-x-2">
+                 <i class="fa-brands fa-html5 text-5xl" style="color: #f25c1c;"></i>
+                 <span class="font-serif"><strong>Learn the building blocks of web development</strong> –Dive deep into the fundamental <br> 
+                    concepts and structures that form the core of web development, including HTML for <br>content structure, CSS for design, and 
+                     JavaScript for interactivity, to develop a <br>strong foundation in creating modern websites and applications.</span>
+                </div>
+                    <br>
+
+                    <div class="flex flex-center space-x-2">
+                      <i class="fa-brands fa-css3-alt text-5xl mb-10" style="color: #f45d0b;"></i>
+                      <span class="font-serif"><strong>Beautify your web pages with CSS</strong> – Master the art of designing visually stunning <br> web pages
+                         using Cascading Style Sheets (CSS). Explore a variety of techniques such <br> as layouts, animations, and responsive designs
+                          to enhance the aesthetic appeal <br> and user experience of your websites.</span>
+                    </div>
+                    <br>
+
+                    <div class="flex flex-center space-x-2">
+                      <i class="fa-brands fa-js text-5xl mb-10" style="color: #f25c1c;"></i>
+                      <span class="font-serif"><strong>Interact with your web pages</strong> – Unlock the power of JavaScript to make your web <br> pages interactive
+                         and dynamic. Learn how to add functionality like form validation, <br> event handling, and dynamic content updates to create engaging and responsive <br> user experiences.</span>
+                    </div>
+                    <br>
+
+                    <div class="flex flex-center space-x-2">
+                         <i class="fa-brands fa-react text-5xl mb-10" style="color: #ec5413;"></i>
+                        <span class="font-serif"><strong>Build dynamic user interfaces with React</strong> – Discover the capabilities of React, <br>a powerful JavaScript
+                             library that enables you to build highly interactive and dynamic <br>user interfaces. Learn how to create reusable components,manage state efficiently, <br>
+                              and build scalable applications for modern web development.</span>
+                    </div>
+                    <br>
+
+                    <div class="flex flex-center space-x-2">
+                       <i class="fa-brands fa-python text-5xl mb-10" style="color: #e6620a;"></i>
+                       <span class="font-serif"><strong>Learn a versatile programming language</strong> – Explore the versatility of programming <br>languages like Python, which can
+                         be used for a wide range of applications, from web <br>development to data analysis, and software development to automation, making it <br>an essential skill for any aspiring developer.</span>
+                    </div>
+                 <br>
+            </div>
+    </section>
+    <!-- Section 2 -Roadmap -->
+    <section class="">
+        <div class="mx-5">
+            <h2 class="text-gray-900 font-bold font-sans text-2xl mb-6">Your Roadmap to Success</h2>
+            <div class="flex">
+             <!-- Step 1 -->
+                <div class="roadmap-step flex items-center cursor-pointer transition-transform duration-500 mb-6 mx-2" onclick="toggleStep(1)">
+                    <div id="step1-box" class="flex items-center bg-green-700 p-4 rounded-lg space-x-2 border border-transparent">
+                        
+                        <!-- Text "1" -->
+                        <span class="text-5xl font-bold">1</span>
+                    </div>
+                </div>
+                <div id="step1-content" class="roadmap-content hidden flex-col items-center transition-transform duration-500 rotate-90 mb-6">
+                    <div class="roadmap-item bg-green-600 border border-green-800 p-4 rounded-md text-center mb-4">
+                        <h3 class="text-white font-serif font-bold text-lg">Discover Your Passion</h3>
+                        <p class="mt-2 text-gray-900 font-semibold">Explore our wide range of courses, <br>designed to suit all interests and skill levels, <br>helping you achieve your goals at your own pace.</p>
+                    </div>
+                </div>
+            
+                <!-- Step 2 -->
+                <div class="roadmap-step flex items-center cursor-pointer transition-transform duration-500 mb-6 mx-2" onclick="toggleStep(2)">
+                    <div id="step2-box" class="flex items-center bg-green-700 p-4 rounded-lg space-x-2 border border-transparent bg-white">
+                        
+                        <!-- Text "2" -->
+                        <span class="text-5xl font-bold">2</span>
+                    </div>
+                </div>
+                <div id="step2-content" class="roadmap-content hidden flex-col items-center transition-transform duration-500 rotate-90 mb-6">
+                    <div class="rodmap-item bg-green-600 border border-green-800 p-4 rounded-md text-center mb-4">
+                        <h3 class="text-white font-serif font-bold text-lg font-semibold">Learn at Your Own Pace</h3>
+                        <p class="mt-2 text-gray-900 font-semibold">Enjoy the flexibility to learn at your <br>own pace and on your own schedule, making <br>it easy to balance education with your personal and professional <br>commitments.</p>
+                    </div>
+                </div>
+            
+                <!-- Step 3 -->
+                <div class="roadmap-step flex items-center cursor-pointer transition-transform duration-500 mb-6 mx-2" onclick="toggleStep(3)">
+                    <div id="step3-box" class="flex items-center bg-green-700 p-4 rounded-lg space-x-2 border border-transparent bg-white">
+                        <!-- Text "3" -->
+                        <span class="text-5xl font-bold">3</span>
+                    </div>
+                </div>
+                <div id="step3-content" class="roadmap-content hidden flex-col items-center transition-transform duration-500 rotate-90 mb-6">
+                    <div class="roadmap-item bg-green-600 border border-green-800 p-4 rounded-md text-center mb-4">
+                        <h3 class="text-white font-serif font-bold text-lg font-semibold">Build Your Portfolio</h3>
+                        <p class="mt-2 text-gray-900 font-semibold">Enhance your learning experience by working <br>on hands-on, real-world projects that allow you to <br>showcase your skills and build a portfolio that stands out <br>to employers.</p>
+                    </div>
+                </div>
+            
+                <!-- Step 4 -->
+                <div class="roadmap-step flex items-center cursor-pointer transition-transform duration-500 mb-6 mx-2" onclick="toggleStep(4)">
+                    <div id="step4-box" class="flex items-center bg-green-700 p-4 rounded-lg space-x-2 border border-transparent bg-white">
+                        <!-- Text "4" -->
+                        <span class="text-5xl font-bold">4</span>
+                    </div>
+                </div>
+                <div id="step4-content" class="roadmap-content hidden flex-col items-center transition-transform duration-500 rotate-90 mb-6">
+                    <div class="roadmap-item bg-green-600 border border-green-800 p-4 rounded-md text-center mb-4">
+                        <h3 class="text-white font-serif font-bold text-lg font-semibold">Launch Your Career</h3>
+                        <p class="mt-2 text-gray-900 font-semibold">Benefit from Erudite Tech expert career support, <br>including personalized guidance, job placement assistance, <br>and valuable networking opportunities to help you land <br>your dream job.</p>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </section>
+            
+    <script>
+        function toggleStep(stepNumber) {
+        const stepBox = document.getElementById(`step${stepNumber}-box`);
+        const content = document.getElementById(`step${stepNumber}-content`);           
+        // Toggle visibility of content
+        content.classList.toggle('hidden');
+                    
+        // Toggle the background color and border for the clicked step
+        stepBox.classList.toggle('bg-green-600');
+        stepBox.classList.toggle('text-white');
+        stepBox.classList.toggle('border-yellow-500');
+                    
+        // Optionally, toggle the rotation of the box when it's clicked (only if desired)
+        stepBox.classList.toggle('rotate-90');
+        }
+    </script>
+            
+    <!--Section 3 -Feedback-->
+    <section class="mx-5">
+            <h2 class="text-3xl font-sans font-bold mb-6">Our Student/ Mentor Feedback</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="border border-gray-300 p-6 text-center">
+                    <img src="kayson.jpg" alt="Student 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Adeleye Kayson</h3>
+                    <p class="text-gray-600 mb-4">"Erudite Tech transformed my career. I highly recommend it!"</p>
+                    <div class="rating text-yellow-500 text-2xl">★★★★★</div>
+                </div>
+                <div class="border border-gray-300 p-6 text-center">
+                    <img src="david.png" alt="Student 2" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">David Omizz</h3>
+                    <p class="text-gray-600 mb-4">"The instructors are amazing and the curriculum is top-notch."</p>
+                    <div class="rating text-yellow-500 text-2xl">★★★★★</div>
+                </div>
+                <div class="border border-gray-300 p-6 text-center">
+                    <img src="adel.jpg" alt="Student 3" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Seyi Adel</h3>
+                    <p class="text-gray-600 mb-4">"Erudite Tech gave me the skills I needed to land my dream job."</p>
+                    <div class="rating text-yellow-500 text-2xl">★★★★★</div>
+                </div>
+                <div class="border border-gray-300 p-6 text-center">
+                    <img src="erudite.jpg" alt="Student 3" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Olaoluwa Erudite</h3>
+                    <p class="text-gray-600 mb-4">"Erudite Tech is such an amazing organization."</p>
+                    <div class="rating text-yellow-500 text-2xl">★★★★★</div>
+                </div>
+            </div>
+    </section>
+
+    <!--Section 4 -cta-->
+    <section id="cta" class="flex justify-center items-center bg-green-700 text-white m-10 my-6 rounded-md">
+        
+            <div class="text-center max-w-md p-6">
+             <h2 class="text-xl font-bold mb-4">Ready to supercharge your skills?</h2>
+             <p class="mb-7">Unlock your potential with cutting-edge tech skills that will help you thrive in today's digital world.</p>
+            <a href=""> <button class="bg-yellow-400 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-md transition duration-300">Get Started</button></a>
+            </div>
+        </div>
+    </section>
+            
+    <!--Section 5 -footer--> 
+    <footer class="bg-green-200" id="footer">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                 <a href="https://erudite11.github.io/Erudite_website/index.html" id="edt" class="text-white text font-mono font-semibold bg-red-900 hover:bg-red-700 rounded-sm py-1 px-1 -mt-1">ERUDITE TECH</a>
+                  <p class="text-green-900 font-semibold mt-4">No.1 Erudite Tech Solutions, <br> Lagos Nigeria.</p>
+                    <div class="flex-row ">
+                     <i class="fa-solid fa-phone mt-4" style="color: #09533d;"></i>
+                     <span class="font-sans text-green-900 font-bold m-3">+234 - 81 - 55 - 842 - 434</span> <br>
+                     <i class="fa-solid fa-envelope mt-4" style="color: #034431;" ></i> 
+                     <span class="font-sans text-green-900 font-bold m-3">eruditetechsub@gmail.com</span>
+                    </div>
+                
+                    <div class="flex mt-5">
+                     <a href="https://www.facebook.com/profile.php?id=100088438176190"> <i class="fa-brands fa-facebook fa-beat mx-2" style="color: #044e37;"></i></a>
+                     <a href="https://wa.me/+2348155842434?text=Hello%20Good%20day%20i'm%20?%20from%20your%20site.%20I%20need%20help%20on"><i class="fa-brands fa-whatsapp fa-beat mx-2" style="color: #044e37;"></i></a>
+                     <a href="https://www.instagram.com/erudite_dgt/"><i class="fa-brands fa-instagram fa-beat mx-2" style="color: #044e37;"></i></a>
+                     <a href="https://www.linkedin.com/in/olaoluwa-oshiyoku-18424031a?trk=contact-info"><i class="fa-brands fa-linkedin fa-beat mx-2" style="color: #044e37;"></i></a>
+                     <a href="https://youtube.com/@eruditedgt8220?si=sWRNVI6Sjy8wAwoM"><i class="fa-brands fa-youtube fa-beat mx-2" style="color: #044e37;"></i></a>
+                     <a href="https://x.com/DgtErudite"><i class="fa-solid fa-x fa-beat mx-2" style="color: #064b37;"></i></a>
+                    </div>
+                </div>
+          
+                <div class="mb-8 md:mb-0">
+                  <h3 class="text-lg font-bold mb-4">Resources</h3>
+                  <ul class="text-green-900 font-semibold">
+                    <li><a href="#" class="hover:text-green-600">About Us</a></li>
+                    <li><a href="#" class="hover:text-green-600">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-green-600">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-green-600">Terms of Service</a></li>
+                  </ul>
+                </div>
+          
+                <div class="mb-8 md:mb-0 lg:mr-0 sm: mr-8">
+                  <h3 class="text-lg font-bold mb-4">Company</h3>
+                  <ul class="text-green-900 font-semibold">
+                    <li><a href="#" class="hover:text-green-600">Our Team</a></li>
+                    <li><a href="#" class="hover:text-green-600">Careers</a></li>
+                    <li><a href="#" class="hover:text-green-600">Blog</a></li>
+                    <li><a href="#" class="hover:text-green-600">Newsroom</a></li>
+                  </ul>
+                </div>
+          
+                <div class="mb-0 md:mb-0 lg:-mt-12 sm: mt-2 ml-">
+                  <h3 class="text- text-lg font-bold mb-4 lg: sm: ml-8 -mt-3">Subscribe To Our Newsletter</h3>
+                    <form>
+                     <input type="email" placeholder="Enter your email" class="border border-green-800 p-2 rounded-md">
+                     <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     <p class="text-green-900 text-center font-awesome font-semibold p-4">&copy; 2024 Erudite_Tech. All rights reserved.</p>
+    </footer>   
+</body>
+</html>
